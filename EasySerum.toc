@@ -1,0 +1,14 @@
+## Interface: 30000
+## Title: EasySerum
+## Notes: Helper addon for the Zul'Drak daily "Troll Patrol: The Alchemist's Apprentice"
+## Author: Xinhuan
+## X-eMail: xinhuan @ gmail DOT com
+## X-Donate: PayPal:xinhuan @ gmail DOT com
+## X-Category: Interface Enhancements
+## Version: 1.03
+## X-Curse-Packaged-Version: v1.03
+## X-Curse-Project-Name: EasySerum
+## X-Curse-Project-ID: easyserum
+## X-Curse-Repository-ID: wow/easyserum/mainline
+
+EasySerum.lua
