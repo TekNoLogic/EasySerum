@@ -4,11 +4,11 @@ local L = setmetatable({}, {__index=function(t,i) return i end})
 
 
 -- Main addon frame
-EasySerum = CreateFrame("Frame")
+local EasySerum = CreateFrame("Frame", "EasySerum")
 EasySerum:RegisterEvent("CHAT_MSG_RAID_BOSS_WHISPER")
 EasySerum:SetScript("OnEvent", function(self, event, arg1, arg2)
 	--local body = format(getglobal("CHAT_RAID_BOSS_WHISPER_GET")..arg1, arg2, arg2)
-	local item = arg1:gsub("!", "")
+	local item = arg1:gsub("[%s]*![%s]*", "")
 	local where = self.info[item]
 	if where then
 		local side = floor(where / 1000)
@@ -32,7 +32,7 @@ EasySerum.info = {
 	[L["Amberseed"]] = 2133,
 	[L["Ancient Ectoplasm"]] = 2132,
 	[L["Blight Crystal"]] = 1232,
-	[L["Chilled Serpent Mucous"]] = 1133,
+	[L["Chilled Serpent Mucus"]] = 1133,
 	[L["Crushed Basilisk Crystals"]] = 1242,
 	[L["Crystallized Hogsnot"]] = 2134,
 	[L["Frozen Spider Ichor"]] = 1332,
