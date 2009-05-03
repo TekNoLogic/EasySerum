@@ -199,8 +199,10 @@ EasySerum:SetScript("OnEvent", function(self, event, arg1, arg2)
 		local row = floor(where % 100 / 10)
 		local num = where % 10
 		if case > 0 then
+			RaidNotice_AddMessage(RaidBossEmoteFrame, L["%s: %s side, Case %d, Row %d, Item %d"]:format(item, side == 1 and L["Left"] or L["Right"], case, row, num), ChatTypeInfo["RAID_WARNING"])
 			print(L["%s: %s side, Case %d, Row %d, Item %d"]:format(item, side == 1 and L["Left"] or L["Right"], case, row, num))
 		else
+			RaidNotice_AddMessage(RaidBossEmoteFrame, L["%s: %s side, %s on the Floor"]:format(item, side == 1 and L["Left"] or L["Right"], num == 1 and L["Sacks"] or num == 2 and L["Barrels"] or L["Crates"]), ChatTypeInfo["RAID_WARNING"])
 			print(L["%s: %s side, %s on the Floor"]:format(item, side == 1 and L["Left"] or L["Right"], num == 1 and L["Sacks"] or num == 2 and L["Barrels"] or L["Crates"]))
 		end
 	end
