@@ -11,4 +11,7 @@
 ## X-Curse-Project-ID: easyserum
 ## X-Curse-Repository-ID: wow/easyserum/mainline
 
+## LoadManagers: AddonLoader
+## X-LoadOn-Zone: Heb'Valok
+
 EasySerum.lua
