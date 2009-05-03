@@ -5,8 +5,8 @@
 ## X-eMail: xinhuan @ gmail DOT com
 ## X-Donate: PayPal:xinhuan @ gmail DOT com
 ## X-Category: Interface Enhancements
-## Version: 1.04
-## X-Curse-Packaged-Version: v1.04
+## Version: 1.05
+## X-Curse-Packaged-Version: v1.05
 ## X-Curse-Project-Name: EasySerum
 ## X-Curse-Project-ID: easyserum
 ## X-Curse-Repository-ID: wow/easyserum/mainline
